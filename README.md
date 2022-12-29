@@ -39,6 +39,10 @@ Build the extension for development:
 > npm run build:dev
 ```
 
+This command below runs the Tailwind CSS tool on the file "./src/style.css" and generates an output file "./dist/style.css" with the processed styles that are used to style the look and feel of the extension application.
+```bash
+> npx tailwindcss -i ./src/style.css -o ./dist/style.css
+```
 
 ### Running Tests
 Tests for this project are written using Jest. To run the tests, use the following command:
