@@ -1,0 +1,8 @@
+dist/
+node_modules/
+coverage/
+.env
+.DS_Store
+Thumbs.db
+yarn.lock
+package-lock.json

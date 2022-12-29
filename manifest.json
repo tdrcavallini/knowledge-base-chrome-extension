@@ -1,0 +1,15 @@
+{
+    "manifest_version": 2,
+    "name": "Knowledge Base Search Extension",
+    "description": "A Chrome browser extension that allows you to search for articles in a knowledge base using Supabase Database.",
+    "version": "1.0.0",
+    "author": "Thiago Cavallini <tdrcavallini@gmail.com>",
+    "permissions": ["<all_urls>"],
+    "browser_action": {
+        "default_icon": "src/icon.png",
+        "default_popup": "popup.html"
+    },
+    "background": {
+        "scripts": ["dist/bundle.js"]
+      }
+}
