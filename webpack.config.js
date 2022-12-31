@@ -5,7 +5,7 @@ module.exports = {
   mode: 'development',
   devtool: 'inline-source-map',
   entry: {
-    app: ['./src/app.js', './src/add-article.js'],
+    app: ['./src/article.js', './src/add-article.js'],
   },
   output: {
     path: path.resolve(__dirname, 'dist'),
