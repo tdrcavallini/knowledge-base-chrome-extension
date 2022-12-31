@@ -7,6 +7,7 @@ This is a self-study project for creating a chrome extension that allows you to 
 - Search articles by keyword in title, description, or code
 - View article details including title, description, and code (if applicable)
 - Copy code snippet to clipboard with a single click
+- Add new articles with a title, description, and optional code snippet
 
 
 ### Getting Started
