@@ -82,9 +82,10 @@ function generateListenersForButtons() {
   
 function generateArticleHTML(result) {
   let bodyContent = "";
+  const descriptionLines = result.description.split('\n');
   bodyContent += `<div class="w-full bg-white rounded-lg shadow-md mb-4 p-4">
     <h2 class="text-xl font-bold text-gray-900">${result.title}</h2>
-    <p class="text-gray-600 text-sm mb-4">${result.description}</p>`;
+    <p class="text-gray-600 text-sm mb-4 mt-2">${descriptionLines.join('<br>')}</p>`;
 
     if (result.code) {
       const codeLines = result.code.split("\n\n");
@@ -143,7 +144,6 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   }
 
- 
   
 });
 

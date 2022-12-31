@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Add new Article - Knowledge Base Search Extension</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="dist/style.css" rel="stylesheet">
+  </head>
+  <body class="bg-indigo-100 h-screen font-sans">
+    <div class="container mx-auto p-6 max-w-[50%] min-w-[500px]">
+        <div class="w-full text-center">
+            <img src="src/icon.png" class="object-cover h-16 w-16 rounded-full mx-auto">
+            <h2 id="app-title" class="text-2xl text-gray-500 font-bold mt-2">Knowledge Base</h2>
+        </div>
+        
+        <div class="w-full mt-2 h-12">
+            <a id="add-popup" href="popup.html" class="inline-flex text-sm leading-5 font-medium text-red-500">
+                <svg class="h-5 w-5 mr-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 19.5L3 12m0 0l7.5-7.5M3 12h18" />
+                </svg>
+            Back
+            </a>
+        </div>
+
+        <div class="w-full">
+            <h2 class="text-2xl font-bold text-slate-600">Add New Article</h2>
+        </div>
+
+        <div class="w-full mt-4">
+            <form id="add-article-form">
+                <div class="mb-4">
+                    <label class="block text-gray-700 text-sm font-bold mb-2" for="title">
+                    Title
+                    </label>
+                    <input
+                    class="shadow appearance-none border rounded w-full py-4 px-4 text-slate-900 focus:outline-none"
+                    id="title"
+                    type="text"
+                    placeholder="Article title"
+                    required
+                    />
+                </div>
+                <div class="mb-4">
+                    <label class="block text-gray-700 text-sm font-bold mb-2" for="description">
+                    Description
+                    </label>
+                    <textarea
+                    class="shadow appearance-none border rounded w-full py-4 px-4 text-slate-900 focus:outline-none"
+                    id="description"
+                    placeholder="Article description"
+                    rows="3"
+                    required
+                    ></textarea>
+                </div>
+                <div class="mb-4">
+                    <label class="block text-gray-700 text-sm font-bold mb-2" for="code">
+                    Code
+                    </label>
+                    <textarea
+                    class="shadow appearance-none border rounded w-full py-4 px-4 text-slate-900 focus:outline-none"
+                    id="code"
+                    placeholder="Article code"
+                    rows="7"
+                    ></textarea>
+                </div>
+                <div class="flex items-center justify-between">
+                    <button
+                    class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+                    type="submit"
+                    >
+                    Add Article
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="dist/bundle.js"></script>
+  </body>
+</html>
